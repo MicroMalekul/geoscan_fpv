@@ -10,8 +10,6 @@
 # pioneerPPM
   
   PioneerPPM is a library for python, so you can send signal to arduino which sending signal to HF module which sends signal to drone's reciever which makes drone fly :)
-  
-  PioneerPPM is a prototype so it doesn't work for now :(
 
 # test
   
