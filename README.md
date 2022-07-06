@@ -7,9 +7,12 @@
   
   Arudino is a file that you need to upload in arduino(surprisingly) to make it convert serial signal from code to PPM signal for HF module
 
+  To make it work you need to go to C:\Users\Username\Documents\Arduino\libraries\PPMEncoder\src\PPMEncoder.h and change "static const uint16_t MIN = 1000;" to "static const uint16_t MIN = 900;"
+  
 # pioneerPPM
   
   PioneerPPM is a library for python, so you can send signal to arduino which sending signal to HF module which sends signal to drone's reciever which makes drone fly :)
+  
 
 # test
   
