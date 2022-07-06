@@ -1,5 +1,8 @@
 # Geoscan FPV
 
+  Videopresentation and video from drone flight on google drive
+  https://drive.google.com/drive/u/0/folders/1seKN3CPWZcdEoEq8AW68mqNXvsFvLPHq
+
 # arduino
   
   Arudino is a file that you need to upload in arduino(surprisingly) to make it convert serial signal from code to PPM signal for HF module
