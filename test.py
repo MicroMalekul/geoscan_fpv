@@ -8,9 +8,9 @@ import keyboard
 
 cap = cv2.VideoCapture(1)
 drone = pioneer_sdk.Pioneer()
-dic = aruco.Dictionary_get(aruco.DICT_4X4_50)
+dic = aruco.Dictionary_get(aruco.DICT_4X4_50) # aruco markers dictionary
 par = aruco.DetectorParameters_create()
-out = cv2.VideoWriter("output.avi", cv2.VideoWriter_fourcc(*"MJPG"), 25, (640, 480))
+out = cv2.VideoWriter("output.avi", cv2.VideoWriter_fourcc(*"MJPG"), 25, (640, 480)) # drone records video in output.avi
 
 
 # functions fu, fur and fup return value to set speeds to centre_oao
