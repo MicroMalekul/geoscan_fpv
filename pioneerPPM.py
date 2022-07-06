@@ -48,7 +48,7 @@ class Drone(object):
             a = a * 500 + 1500
             self.send(1, a)
 
-    def arm(self):  # arming drone (currently not working)
+    def arm(self):  # arming drone
         self.send(0, 1500)
         self.send(1, 1500)
         self.send(2, 1000)
@@ -64,7 +64,7 @@ class Drone(object):
         self.send(3, 1500)
         time.sleep(1)
 
-    def disarm(self):  # disarming drone (currently not working because arming doesn't work :) )
+    def disarm(self):  # disarming drone
         self.send(0, 1500)
         self.send(1, 1500)
         self.send(2, 1000)
