@@ -8,9 +8,9 @@ void setup() {
 bool r = 0;
 int i = -1, d = 0;
 
-# arduino takes data in form of "{Channel number}{value};"
-# channe number need to be single digit
-# numeration of channels goes from zero
+// arduino takes data in form of "{Channel number}{value};"
+// channe number need to be single digit
+// numeration of channels goes from zero
 void loop() {
   if(Serial.available()) {
     char a = Serial.read();
