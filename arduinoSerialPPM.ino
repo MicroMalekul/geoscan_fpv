@@ -8,6 +8,8 @@ void setup() {
 bool r = 0;
 int i = -1, d = 0;
 
+# arduino takes data in form of "{Channel number}{value};"
+# numeration of channels goes from zero
 void loop() {
   if(Serial.available()) {
     char a = Serial.read();
