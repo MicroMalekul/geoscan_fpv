@@ -13,10 +13,11 @@ class Drone(object):
         time.sleep(3)
 
     def send(self, ch, val):  # function to send specific value to specific channel (channel numeration goes from zero)
-        self.ar.write(f'{ch}{val};'.encode('utf-8'))
+        self.ar.write(f'{ch}{round(val)};'.encode('utf-8'))
 
     # set_yaw, set_pitch, set_roll and set_throttle functions take number from -1 to 1
     def set_yaw(self, a):  # negative value -- drone turns left
+        a = -a
         global y  # positive value -- drone turns right
         if a != y:
             y = a
@@ -41,6 +42,7 @@ class Drone(object):
             self.send(0, a)
 
     def set_pitch(self, a):  # negative value -- drone goes backward
+        a = -a
         global p  # positive value -- drone goes forward
         if a != p:
             p = a
